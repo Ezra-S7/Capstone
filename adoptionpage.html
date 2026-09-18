@@ -7,32 +7,34 @@
 </head>
 <body>
     <h1>Puppy Adoption Page</h1> 
-    <h3>Please enter your information to adopt a puppy and we'll email you back.</h3>
+    <h2>Please enter your information to adopt a puppy and we'll email you back.</h2>
     <p>Please Note: First Name, Last Name, Password, and Email are required</p>
-    <form>
+    <form method="get">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <br>
         <br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="name@email.com" required>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <br>
         <p>Are you over the age of 18?</p>
-        <label for="over18">Yes</label>
-        <input type="radio" id="over18" name="age" value="over18">
-        <label for="notOver18">No</label>
-        <input type="radio" id="notOver18" name="age" value="notOver18">
+        <label for="yes">Yes:</label>
+        <input type="radio" id="yes" name="over18" value="yesOver">
+        <label for="no">No:</label>
+        <input type="radio" id="no" name="over18" value="notOver">
         <br>
-        <p>Do you have a Credit Card or Paypal?</p>
+        <p>Do you have a Credit Card or PayPal?</p>
         <select name="paymentMethod">
             <option value="creditCard">Credit Card</option>
-            <option value="paypal">Paypal</option>
+            <option value="paypal">PayPal</option>
         </select>
         <br>
-        <input type="submit" value="Submit">
+        <br>
+        <input type="submit" name="submit" value="Submit Feedback">
     </form>
 </body>
 </html>
